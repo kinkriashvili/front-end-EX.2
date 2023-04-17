@@ -1,0 +1,27 @@
+body {
+    margin-bottom: 10000px;
+}
+.main-footer {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem 10rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.main-footer-img {
+    width: 70%;
+}
+@media (max-width: 915.5px) {
+    .main-footer {
+        margin-top: 150px;
+    }
+}
+@media (max-width: 750px) { 
+    .main-footer {
+        margin-top: 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 30px;
+    }
+
+}

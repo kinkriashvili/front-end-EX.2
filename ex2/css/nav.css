@@ -1,0 +1,125 @@
+/* main nav */
+nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* nav left */
+
+
+/* nav middle */
+.nav-middle {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-middle-info {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #9893A3;
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+    cursor: pointer;
+}
+.nav-middle-info:hover:after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    border: 1px solid #9E99FF; 
+    top: 32px;
+}
+
+/* nav right */
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 20%;
+
+}
+
+/* buttons */
+.nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-button {
+    height: 90%;
+    width: 38%;
+    background-color: white;
+    border: solid #6C63FF 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.getstarted-button {
+    height: 90%;
+    width: 58%;
+    background-color: #6C63FF;
+    border: solid #6C63FF 2px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.login-info {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    color: #6C63FF;
+}
+.getstarted-info {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+
+
+@media (max-width: 600px) {
+    nav {
+        position: relative;
+        
+    }
+    .nav-left {
+        position: absolute;
+        left: 0;
+        width: 10%;
+    }
+    .logo-img {
+        width: 100%;
+    }
+  
+   
+    .nav-right {
+        position: absolute;
+        right: 0;
+        width: 10%;
+    }
+    .getstarted-button {
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .login-button {
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+    .getstarted-info {
+        font-size: 50%
+    }
+    .login-info {
+        font-size: 50%
+    }
+}

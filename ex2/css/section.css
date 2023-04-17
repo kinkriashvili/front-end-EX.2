@@ -1,0 +1,39 @@
+section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 100px;
+}
+
+/* left */
+
+.learnmore-link {
+    text-decoration: None;
+    width: 92px;
+    height: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2F2E41;
+    cursor: pointer;
+}
+/* left */
+
+/* responsive */
+
+@media (max-width: 750px) {
+    section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .head-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
